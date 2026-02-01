@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "fe2cc164-992b-47e9-aa17-9617763fd032",
+  "name": "sceneCentrale",
+  "symbol": "bg_scenecentrale_0",
+  "width": 40,
+  "height": 30,
+  "imageWidth": 320,
+  "imageHeight": 240,
+  "filename": "sceneCentrale.png",
+  "tileColors": "",
+  "autoColor": false
+}

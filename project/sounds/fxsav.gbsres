@@ -1,9 +1,0 @@
-{
-  "_resourceType": "sound",
-  "id": "36d05c8d-ea3a-4bfd-8272-d67a03b7335b",
-  "name": "fx.sav",
-  "symbol": "sound_fx_sav",
-  "filename": "fx.sav",
-  "type": "fxhammer",
-  "numEffects": 15
-}
