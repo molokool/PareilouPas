@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "94bfae8f-1f4e-42ae-83c1-53be1f0ee083",
+  "name": "map ouest gauche",
+  "symbol": "bg_map_ouest_gauche",
+  "width": 26,
+  "height": 45,
+  "imageWidth": 208,
+  "imageHeight": 360,
+  "filename": "map ouest gauche.png",
+  "tileColors": "",
+  "autoColor": false
+}

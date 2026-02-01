@@ -1,0 +1,72 @@
+{
+  "_resourceType": "actor",
+  "id": "6184c75c-9714-403c-bf21-4c77026da74b",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "a0442b6a-634f-44da-9962-77938e3ed839",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_10",
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "21"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "tone",
+              "priority": "high",
+              "pitch": 7,
+              "frequency": 730,
+              "duration": 0.6,
+              "wait": false,
+              "effect": 0
+            },
+            "id": "71092914-1c97-45bc-b740-ac32ddb607e5"
+          },
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "5c9f9adb-8c32-433a-80c2-93c839335eb7",
+              "emoteId": "603fd18d-674c-4360-9f57-5fb4b935b442"
+            },
+            "id": "5f691a04-721d-4e1a-9a9a-61002979d0ec"
+          }
+        ],
+        "false": []
+      },
+      "id": "383a675a-4f89-48f6-a739-7bbf0937fe5d"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 18,
+  "y": 8,
+  "_index": 1
+}

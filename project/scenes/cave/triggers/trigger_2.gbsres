@@ -1,0 +1,178 @@
+{
+  "_resourceType": "trigger",
+  "id": "d3410d6f-2d94-4334-a193-95859d714720",
+  "name": "",
+  "prefabId": "",
+  "x": 31,
+  "y": 20,
+  "symbol": "trigger_19",
+  "prefabScriptOverrides": {},
+  "width": 2,
+  "height": 2,
+  "script": [
+    {
+      "command": "EVENT_CAMERA_SHAKE",
+      "args": {
+        "time": 0.2,
+        "frames": 30,
+        "shakeDirection": "horizontal",
+        "magnitude": {
+          "type": "number",
+          "value": 3
+        }
+      },
+      "id": "484a9642-3d96-40bf-bccf-ce1589c7a929"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "vous tapez dans\nun truc mou"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "1efe160b-1aeb-4e92-8232-38113347e305"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Voulez-vous y \ngouter ?"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "cfc71a41-8e12-4d2b-aea3-87dfcc175cd3"
+    },
+    {
+      "command": "EVENT_CHOICE",
+      "args": {
+        "variable": "L3",
+        "trueText": "OUUUuuui !",
+        "falseText": "Non."
+      },
+      "id": "c5f39cd7-12c8-428c-acda-be1b305afb07"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "L3"
+          },
+          "valueB": {
+            "type": "true"
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "9009752e-9bf7-41cf-878a-b310dc5d4fe1",
+              "priority": "medium",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 19
+            },
+            "id": "23af6b0d-cff1-4e0b-a908-66b6d69f9e6f"
+          },
+          {
+            "command": "EVENT_ACTOR_EFFECTS",
+            "args": {
+              "effect": "flicker",
+              "actorId": "$self$",
+              "distance": 20,
+              "speed": 2,
+              "time": 1.8,
+              "frames": 30
+            },
+            "id": "f8af7ec7-bdc2-489d-a3e5-74937c1b9e3b"
+          },
+          {
+            "command": "EVENT_ACTOR_EFFECTS",
+            "args": {
+              "effect": "splitOut",
+              "actorId": "$self$",
+              "distance": 20,
+              "speed": 2,
+              "time": 0.5,
+              "frames": 30
+            },
+            "id": "9ddaf5c8-c195-420b-aeaa-3ed71fb4411e"
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "0260d46a-94df-4a1c-807d-22382b091388",
+              "priority": "medium",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 0
+            },
+            "id": "0e17d910-4d63-4a23-aa79-620bb44f1478"
+          },
+          {
+            "command": "EVENT_ACTOR_EFFECTS",
+            "args": {
+              "effect": "splitIn",
+              "actorId": "$self$",
+              "distance": 20,
+              "speed": 3,
+              "time": 0.5,
+              "frames": 30
+            },
+            "id": "5224c16a-41ba-436b-95ac-e8bee500b434"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_STOP",
+            "args": {},
+            "id": "1963f5c5-a30a-433e-97a9-a891439b1779"
+          }
+        ]
+      },
+      "id": "dcc5652f-2f3a-4b45-bf01-e17bc10368b4"
+    }
+  ],
+  "leaveScript": [],
+  "_index": 1
+}

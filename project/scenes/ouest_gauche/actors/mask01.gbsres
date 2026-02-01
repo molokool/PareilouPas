@@ -1,0 +1,188 @@
+{
+  "_resourceType": "actor",
+  "id": "7bfe7b1c-ec88-4c51-8956-3c392edd1957",
+  "name": "Mask01",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "bf31ef09-f349-48d8-af7e-89fa1d3d0461",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_6",
+  "script": [
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "21"
+      },
+      "id": "89c9dac7-2b8d-4694-b96d-76ac8605f0ff"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "79f50052-59b1-4f7a-818b-f8b2892b3cd4"
+      },
+      "id": "83605d34-6b87-4438-a4d2-567c1647a285"
+    },
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "36d05c8d-ea3a-4bfd-8272-d67a03b7335b",
+        "priority": "medium",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 8
+      },
+      "id": "eaf86f04-e107-44e0-8d57-114f0e6d7049"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Mais qu'ouïe-je ?"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "3c49dde4-d877-4da9-8713-968a7855a099"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "7312d2b7-135d-4eb3-aa48-72e8a486a355"
+      },
+      "id": "40d00d21-c68c-40b3-9880-cbd42741e7d6"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Mais quelle est\ncette musique ?"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "34303e21-1c50-4cab-b45f-5f4978e1f703"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "41dc5164-9d59-4fdc-a06d-d8235a6296fd"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "61"
+          },
+          "valueB": {
+            "type": "true"
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "21"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 0
+                }
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_ACTIVATE",
+                  "args": {
+                    "actorId": "$self$"
+                  },
+                  "id": "8ad1cbb4-2e83-43d0-ac9d-b70d85d70fca"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "$self$"
+                  },
+                  "id": "8599b5d9-0043-441b-ae02-626a81332bb3"
+                }
+              ]
+            },
+            "id": "c916bcff-d3cb-4eeb-837f-fe76066522e6"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "633ef5d2-aea0-4bd7-a9e0-d600a4eb7112"
+          }
+        ]
+      },
+      "id": "ef08f2a3-e3c9-4686-94ab-9ba545f0197f"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 11,
+  "y": 5,
+  "_index": 1
+}

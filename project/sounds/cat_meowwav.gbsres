@@ -1,0 +1,8 @@
+{
+  "_resourceType": "sound",
+  "id": "2d3d4d12-7cd1-444f-8641-986f1af28aa9",
+  "name": "Cat_Meow.wav",
+  "symbol": "sound_cat_meow_wav",
+  "filename": "Cat_Meow.wav",
+  "type": "wav"
+}

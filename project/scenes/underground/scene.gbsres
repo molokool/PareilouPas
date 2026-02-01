@@ -1,0 +1,61 @@
+{
+  "_resourceType": "scene",
+  "id": "3509d273-bf7e-4946-89ce-a489df5a449d",
+  "_index": 5,
+  "type": "TOPDOWN",
+  "name": "Underground",
+  "symbol": "scene_underground",
+  "x": 1024,
+  "y": 512,
+  "width": 25,
+  "height": 45,
+  "backgroundId": "ebfcca3f-b36d-4529-85fe-be97ed080be1",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "79f50052-59b1-4f7a-818b-f8b2892b3cd4"
+      },
+      "id": "2a3a40d0-68f6-4967-b071-687134f04139"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "21"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_MUSIC_PLAY",
+            "args": {
+              "musicId": "c4487b98-1ffa-4dec-abab-7764191c24a2"
+            },
+            "id": "201ba2d2-014d-4fe3-99a3-04a3d8f88b20"
+          }
+        ],
+        "false": []
+      },
+      "id": "7b387b3c-b950-46b9-b927-460b020322a2"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "001c+0f15+004+0f!0014+0f!003+0f!0014+0f!003+0f12+003+0f!0014+0f!003+0f!0014+0f!003+0f!0014+0f!003+0f!0014+0f!003+0f!0014+0f!003+0f!0014+0f!003+0f!007+0f4+009+0f!003+0f!004+0f4+002+0fb+003+0f!004+0f!00f+0f!003+0f!004+0f!00f+0f!003+0f!003+0f5+002+0fb+003+0f!003+0f!0014+0f!002+0f2+0014+0f!002+0f2+0014+0f!00!0f3+0014+0f!0014+0f!003+0f!006+0f!00e+0f!002+0f!0014+0f!003+0f!0018+0f!00!0f8+002+0fe+003+0f!004+0f!00e+0f2+003+0f!003+0f!00f+0f!004+0f!002+0f2+00c+0f!002+0f!004+0f!002+0f!00!0f!002+0f!009+0f!00!0f!004+0f!002+0f!00!0f!002+0f4+008+0f!004+0f!003+0f2+002+0f!002+0f!009+0f!003+0f!008+0f!00!0f!009+0f!003+0f!009+0f2+009+0f!003+0f!009+0f2+009+0f!003+0f!009+0f2+009+0f!003+0f!009+0f!00!0f!008+0f!003+0f!009+0f5+006+0f!003+0f!0014+0f!003+0f!0014+0f!003+0f!00d+0f2+005+0f!003+0f!00c+0f!002+0f!002+0f!00!0f!003+0f!00c+0f!002+0f6+003+0f!002+0fb+00c+0f2+002c+",
+  "playerSpriteSheetId": "0461b2fb-649c-40be-b41d-004eb27bca72"
+}

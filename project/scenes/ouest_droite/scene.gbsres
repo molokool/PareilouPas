@@ -1,0 +1,61 @@
+{
+  "_resourceType": "scene",
+  "id": "1b7f9ffd-2bbb-470b-9189-c2ac435d2a55",
+  "_index": 1,
+  "type": "TOPDOWN",
+  "name": "Ouest_droite",
+  "symbol": "scene_house",
+  "x": 400,
+  "y": 520,
+  "width": 33,
+  "height": 44,
+  "backgroundId": "3fac1499-bf22-4e24-9e67-c5acb3f40287",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "79f50052-59b1-4f7a-818b-f8b2892b3cd4"
+      },
+      "id": "e65f2dfe-ecb7-4497-8e0d-6f54a107c004"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "21"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_MUSIC_PLAY",
+            "args": {
+              "musicId": "7312d2b7-135d-4eb3-aa48-72e8a486a355"
+            },
+            "id": "81744286-0078-4944-803f-13c82c43b6e5"
+          }
+        ],
+        "false": []
+      },
+      "id": "bfd780c1-af12-4975-9984-35a0d0aa8e5b"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0012+0f!0020+0f!0020+0f!00e+0f11+00!0f!001e+0f!00!0f!001e+0f!00!0f!003+0f3+0018+0f!00!0f!003+0f!00!0f!0018+0f!00!0f!003+0f!00!0f!008+0fb+005+0f!00!0f!003+0f!00!0f!0012+0f!005+0f!00!0f!003+0f3+0012+0f!005+0f!00!0f!0018+0f!005+0f!00!0f!0018+0f!005+0f!00!0f!00a+0f4+00a+0f!005+0f!00!0f!00a+0f!00d+0f!005+0f!00!0f!00a+0f!00d+0f!005+0f!00!0f!008+0f3+00d+0f!005+0f!00!0f!008+0f!00f+0f!005+0f!00!0f!008+0f!00f+0f!005+0f!00!0f!008+0f6+00a+0f!005+0f!00!0f!0018+0f!005+0f!00!0f!00e+0fb+005+0f!00!0f!001f+0f7+002+0f7+0013+0f2+002+0f!002+0f!006+0fb+00a+0f3+002+0f!0010+0f!005+0f!006+0f!002+0f7+00a+0f!005+0f3+0018+0f!005+0f!002+0f2+0016+0f!005+0f!004+0f!0015+0f!005+0f!004+0f!0015+0f!005+0f!004+0f!0015+0f!005+0f!004+0f!002+0f7+00c+0f!005+0f!004+0f!002+0f!005+0f!00c+0f!005+0f!004+0f4+005+0f3+00a+0f!005+0f!001a+0f!005+0f!001a+0f!005+0f!0010+0fb+005+0f!0020+0f!0020+0f!0020+0f!0020+0f!0010+0f11+0031+",
+  "playerSpriteSheetId": "0461b2fb-649c-40be-b41d-004eb27bca72"
+}

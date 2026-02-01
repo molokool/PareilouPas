@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "7b185f35-58b7-4af8-9a0b-443ba0e8d8c9",
+  "name": "mapNord",
+  "symbol": "bg_map_nord",
+  "width": 60,
+  "height": 50,
+  "imageWidth": 480,
+  "imageHeight": 400,
+  "filename": "mapNord.png",
+  "tileColors": "",
+  "autoColor": false
+}

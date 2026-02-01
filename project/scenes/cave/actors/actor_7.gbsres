@@ -1,0 +1,161 @@
+{
+  "_resourceType": "actor",
+  "id": "ee8118ec-9a29-44c8-8695-6b18c956b271",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "40dcd163-9f72-4861-8131-b01eb9baa000",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_20",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Hey ! faut faire\nun truc pour",
+          "tes yeux... ",
+          "Si tu avais du\n[Masque-à-rat]",
+          "je pourais peut-\netre t'aider.",
+          "Alors, t'en as ?"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "9504e23a-8c44-4107-85f1-513124c0db98"
+    },
+    {
+      "command": "EVENT_CHOICE",
+      "args": {
+        "variable": "L4",
+        "trueText": "Lui donner",
+        "falseText": "Ou lui donner"
+      },
+      "id": "4628b014-2797-4615-885e-7ebfdcd23b3d"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "$self$",
+        "direction": {
+          "type": "direction",
+          "value": "up"
+        }
+      },
+      "id": "d3e4d896-3eee-428d-8b8b-82f6f4d716a1"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Attend..."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "05961bf8-8bb9-489b-bbce-bda9bbacd2e3"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.9,
+        "frames": 30
+      },
+      "id": "b643aaac-b0a7-4cfc-b81e-134d155412c2"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "$self$",
+        "direction": {
+          "type": "direction",
+          "value": "down"
+        }
+      },
+      "id": "c17882d4-82e1-475f-9628-6e659591d838"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "TADAM !"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "f4154f61-6101-4bf4-9f0c-9aae7c48ce52"
+    },
+    {
+      "command": "EVENT_ACTOR_ACTIVATE",
+      "args": {
+        "actorId": "8704d49b-507f-4763-85a1-71b59ebd210a"
+      },
+      "id": "c15689ca-6f3c-459e-b9b2-1544bd91c8aa"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "9b18411d-cef7-41e9-bcda-4364d8fce4d4"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 6,
+  "y": 1,
+  "_index": 6
+}

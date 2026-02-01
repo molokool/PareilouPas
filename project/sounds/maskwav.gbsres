@@ -1,0 +1,8 @@
+{
+  "_resourceType": "sound",
+  "id": "fa30e3d6-c707-4ae5-9521-e27769f32ed0",
+  "name": "Mask.wav",
+  "symbol": "sound_mask_wav",
+  "filename": "Mask.wav",
+  "type": "wav"
+}

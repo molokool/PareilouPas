@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "dcb20f63-21fe-4421-8cdd-6a58334a6b88",
+  "name": "mapOuest",
+  "symbol": "bg_map_ouest",
+  "width": 45,
+  "height": 45,
+  "imageWidth": 360,
+  "imageHeight": 360,
+  "filename": "mapOuest.png",
+  "tileColors": "",
+  "autoColor": false
+}

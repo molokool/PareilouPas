@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "5b171325-d9d7-45c1-8d04-7d12ebf5951f",
+  "name": "mapCentrale",
+  "symbol": "bg_scenecentrale",
+  "width": 40,
+  "height": 30,
+  "imageWidth": 320,
+  "imageHeight": 240,
+  "filename": "mapCentrale.png",
+  "tileColors": "",
+  "autoColor": false
+}

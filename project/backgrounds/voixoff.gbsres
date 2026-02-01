@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "4ec87310-537a-44ff-ae54-86159c2a8d62",
+  "name": "voixOff",
+  "symbol": "bg_logo_copie_",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "voixOff.png",
+  "tileColors": "",
+  "autoColor": false
+}

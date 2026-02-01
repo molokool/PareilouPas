@@ -1,0 +1,8 @@
+{
+  "_resourceType": "sound",
+  "id": "8ffbcedf-5ca1-4321-b17c-a5f63b8e0ef8",
+  "name": "wouf.wav",
+  "symbol": "sound_wouf_wav",
+  "filename": "wouf.wav",
+  "type": "wav"
+}

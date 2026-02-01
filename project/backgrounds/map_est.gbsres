@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "ebfcca3f-b36d-4529-85fe-be97ed080be1",
+  "name": "map est",
+  "symbol": "bg_map_est",
+  "width": 25,
+  "height": 45,
+  "imageWidth": 200,
+  "imageHeight": 360,
+  "filename": "map est.png",
+  "tileColors": "",
+  "autoColor": false
+}

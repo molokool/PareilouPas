@@ -1,0 +1,31 @@
+{
+  "_resourceType": "scene",
+  "id": "ec3ec018-5f45-440d-a1b7-85897d5da0a7",
+  "_index": 7,
+  "name": "Ouest_gauche",
+  "backgroundId": "94bfae8f-1f4e-42ae-83c1-53be1f0ee083",
+  "tilesetId": "",
+  "width": 26,
+  "height": 45,
+  "type": "TOPDOWN",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "004e+0f1a+001b+0fa+0010+0f!008+0f3+00e+0f!008+0f3+00e+0f!008+0f!002+0fd+00!0f!008+0f!002+0f!00d+0f!008+0f!002+0f!00d+0f!008+0f!002+0f!00d+0f!008+0f!002+0f!00d+0f!008+0f!002+0f!00d+0fa+002+0f!0019+0f!0019+0f!0019+0f!0019+0f!0019+0f!0019+0f!0019+0fd+0034+0f1a+00d0+0fe+0019+0f!0019+0f!0012+0f2+005+0f!0012+0f2+005+0fd+004+0f2+002+0f2+0014+0f2+002+0f2+005e+0f1a+001a+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_8",
+  "x": 136,
+  "y": 520,
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "79f50052-59b1-4f7a-818b-f8b2892b3cd4"
+      },
+      "id": "d9380909-1609-4b9f-9cfc-dc139d3d64e7"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "0461b2fb-649c-40be-b41d-004eb27bca72"
+}

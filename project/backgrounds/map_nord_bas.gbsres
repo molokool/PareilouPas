@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "ecee47e7-eaae-48ee-b856-579b3f8a2862",
+  "name": "map nord bas",
+  "symbol": "bg_map_nord_bas",
+  "width": 60,
+  "height": 29,
+  "imageWidth": 480,
+  "imageHeight": 232,
+  "filename": "map nord bas.png",
+  "tileColors": "",
+  "autoColor": false
+}

@@ -1,0 +1,322 @@
+{
+  "_resourceType": "actor",
+  "id": "8add3f9e-89de-414b-976c-596764b347aa",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "f4d9e281-9dd6-49ae-9089-f9b37b9ba27f",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 255,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_40",
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "player"
+      },
+      "id": "ed6f682a-e8ba-4835-86d9-480e252dacf8"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_FRAME",
+      "args": {
+        "actorId": "$self$",
+        "frame": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "63b67b28-0509-4b4f-a634-77493ae999e2"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "C'est l'heure\ndu REVEAL !"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "3fc31088-b9f4-4a2c-87c8-da59052b7556"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_FRAME",
+      "args": {
+        "actorId": "$self$",
+        "frame": {
+          "type": "number",
+          "value": 2
+        }
+      },
+      "id": "b7f9918a-c3cb-4f62-bf16-0a6be9803079"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 2,
+        "frames": 30
+      },
+      "id": "84e58fc9-3836-4bfd-adf0-f9b2e81ada9a"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_FRAME",
+      "args": {
+        "actorId": "$self$",
+        "frame": {
+          "type": "number",
+          "value": 3
+        }
+      },
+      "id": "241ad90b-76e6-4879-afb1-d4a775cbb4b3"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "ac0ab19f-4193-41f6-948d-f423d0701cfc"
+      },
+      "id": "42fa65a8-c374-4ca8-8bb4-8b4223ee328e"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "WHOUUUUU !"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "363247fa-c6b3-4b8b-a466-59a4c2b85444"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_FRAME",
+      "args": {
+        "actorId": "$self$",
+        "frame": {
+          "type": "number",
+          "value": 4
+        }
+      },
+      "id": "ff0a12f8-d93d-4dd9-a61a-43c12501c5c8"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Pourquoi enlève\nt'il son masque ?"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "33b9f137-b59d-42ae-b3b3-b57b28a01ccb"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Regardez le !\n\nIl sourit ?!"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "94a73af4-39fb-428f-95b0-4df0bdb2198c"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "A quoi bon porter\nnotre masque ?",
+          "Il a raison !!\n\nPromizoulou !!!"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "9f1b4e82-69d6-415e-b4bd-935ecc34152d"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "b4949c15-c93c-4cf2-8e78-651f0cf3c324",
+        "direction": {
+          "type": "direction",
+          "value": "down"
+        }
+      },
+      "id": "bd9ce909-a8bf-45e8-a8c0-447da144aae1"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "548fd4c9-caee-4526-bba5-c846eb9aeb5a",
+        "direction": {
+          "type": "direction",
+          "value": "down"
+        }
+      },
+      "id": "074972d8-ffcc-4355-9a2f-967b9a98760b"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "87daf81e-90ce-4035-bb31-84dcedfff6c3",
+        "direction": {
+          "type": "direction",
+          "value": "down"
+        }
+      },
+      "id": "5015afb8-608d-4efd-9059-879658a196e1"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "ce2e9950-5a4a-4482-b3d3-338a0ccd9a9a",
+        "direction": {
+          "type": "direction",
+          "value": "down"
+        }
+      },
+      "id": "eed11efd-0d34-497c-acbf-45266060d888"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "fb337596-8071-4a0d-8b2b-3e9ecc6a40e7",
+        "direction": {
+          "type": "direction",
+          "value": "down"
+        }
+      },
+      "id": "394115b9-a1c2-468b-bd1c-8e56e3398fee"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "1c120f77-c24c-43fb-80fe-b35cfc577cb5",
+        "direction": {
+          "type": "direction",
+          "value": "down"
+        }
+      },
+      "id": "4fc04d5a-4012-4198-a78b-58f90666f365"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "db7c5104-e029-469f-9d6e-d5224fae25e3",
+        "direction": {
+          "type": "direction",
+          "value": "down"
+        }
+      },
+      "id": "b3a56eb5-d9a1-4caa-85a2-d9012343f742"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 3,
+        "frames": 30
+      },
+      "id": "8e3ffb5c-4da4-4e5c-b3da-f9aa147145a2"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "382961a1-e615-4b92-92a7-f1a791b50b7a",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": 4
+      },
+      "id": "6f849bba-315e-4ca7-97c7-d4d256685d92"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 19,
+  "y": 18,
+  "_index": 8
+}

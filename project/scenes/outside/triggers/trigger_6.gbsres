@@ -1,0 +1,93 @@
+{
+  "_resourceType": "trigger",
+  "id": "12cec259-6ab9-4c97-987b-59baf252bf1d",
+  "name": "",
+  "prefabId": "",
+  "x": 31,
+  "y": 6,
+  "symbol": "trigger_8",
+  "prefabScriptOverrides": {},
+  "width": 7,
+  "height": 12,
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "43"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_GROUP",
+            "args": {},
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_EMOTE",
+                  "args": {
+                    "actorId": "6edfc040-60ba-4b10-b8a2-e1de5b54a8b8",
+                    "emoteId": "da932101-c304-4f21-8dc9-0f5dc6178727",
+                    "__collapse": false
+                  },
+                  "id": "a3afaed1-667e-4c1e-81d3-1eca4ef3ad8b"
+                },
+                {
+                  "command": "EVENT_ACTOR_MOVE_TO",
+                  "args": {
+                    "actorId": "6edfc040-60ba-4b10-b8a2-e1de5b54a8b8",
+                    "x": {
+                      "type": "number",
+                      "value": 39
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 16
+                    },
+                    "moveType": "vertical",
+                    "useCollisions": false,
+                    "__collapse": false
+                  },
+                  "id": "bf9b2cd4-a29e-478b-a153-c015e3e3b9bd"
+                },
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "6edfc040-60ba-4b10-b8a2-e1de5b54a8b8",
+                    "__collapse": false
+                  },
+                  "id": "b44dbee6-75b8-4131-adcc-e5d14841549f"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "43",
+                    "value": {
+                      "type": "true"
+                    },
+                    "__collapse": false
+                  },
+                  "id": "ef50755f-0dd5-4f5f-9bed-93bff23fc7bb"
+                }
+              ]
+            },
+            "id": "2c257399-93d9-4e69-91d8-2a01182eb275"
+          }
+        ],
+        "false": []
+      },
+      "id": "9ac1f943-16a6-4b97-bdb3-423593dc977f"
+    }
+  ],
+  "leaveScript": [],
+  "_index": 5
+}

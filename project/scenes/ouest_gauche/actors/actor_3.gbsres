@@ -1,0 +1,66 @@
+{
+  "_resourceType": "actor",
+  "id": "77c16056-8992-418d-b732-5238603507b3",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "1e27bb8e-c805-435a-8b87-05b4f50da4f0",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_31",
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "21"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_MUSIC_PLAY",
+            "args": {
+              "musicId": "ac0ab19f-4193-41f6-948d-f423d0701cfc"
+            },
+            "id": "ba21a7cd-637b-4829-accb-717c9ddefee8"
+          }
+        ],
+        "false": []
+      },
+      "id": "c2d5a323-859e-4fb7-8c29-746448b908ea"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "68cdb765-6b7f-4dda-ac32-50dd68d9f0b6"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 6,
+  "y": 37,
+  "_index": 3
+}

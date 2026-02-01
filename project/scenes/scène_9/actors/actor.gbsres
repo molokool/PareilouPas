@@ -1,0 +1,250 @@
+{
+  "_resourceType": "actor",
+  "id": "5c9f9adb-8c32-433a-80c2-93c839335eb7",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "17219846-cda9-4e84-bdfa-c3ff105d42cc",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_9",
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "21"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [],
+        "false": []
+      },
+      "id": "a4abed60-7f9d-4449-990a-20eb3e170dde"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "21"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Il remue la queue\nsur le rythme"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "a63d7436-3b53-4fda-8b2a-735655732cec"
+          }
+        ],
+        "false": []
+      },
+      "id": "6e495ba9-7663-4bb1-ba61-fc3265167098"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "21"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 2
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Il remue la queue\nsur le rythme"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "5cf2e672-b4fd-41d2-b2ef-1bfbb6edae1f"
+          },
+          {
+            "command": "EVENT_CHOICE",
+            "args": {
+              "variable": "L2",
+              "trueText": "-Abboyer!",
+              "falseText": "-Chanter!"
+            },
+            "id": "1cf1b8c7-0163-463e-a16f-66cf6aca4b1c"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "variable",
+                "value": "L2"
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "0efc89db-96ca-4e3e-b174-1fcd66094475",
+                    "priority": "medium",
+                    "pitch": 4,
+                    "frequency": 200,
+                    "duration": 0.5,
+                    "wait": true,
+                    "effect": 0
+                  },
+                  "id": "9c10ed37-3923-415b-a62c-1156be6e7dd0"
+                },
+                {
+                  "command": "EVENT_ACTOR_EMOTE",
+                  "args": {
+                    "actorId": "$self$",
+                    "emoteId": "a0fb64c2-d665-4f58-8739-f4dc78519733"
+                  },
+                  "id": "6b6d72e5-bb4c-4eb4-a276-b66781f74a50"
+                },
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "dc36f0a5-b4c1-400a-8821-4e8538b20029",
+                    "priority": "high",
+                    "pitch": 4,
+                    "frequency": 200,
+                    "duration": 0.5,
+                    "wait": true,
+                    "effect": 0
+                  },
+                  "id": "c90ce132-dbc7-439e-a105-dcc01607acc4"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_MUSIC_STOP",
+                  "args": {},
+                  "id": "5c8bbdd9-447c-42c2-96a3-33f77b8d41b8"
+                },
+                {
+                  "command": "EVENT_ACTOR_EMOTE",
+                  "args": {
+                    "actorId": "$self$",
+                    "emoteId": "2f2806af-f8a6-44fd-9d03-09a44d0059f7"
+                  },
+                  "id": "90e978cb-9191-4dca-8097-b467cc6e1e02"
+                },
+                {
+                  "command": "EVENT_SET_TIMER_SCRIPT",
+                  "args": {
+                    "timer": 1,
+                    "duration": 0.5,
+                    "frames": 30,
+                    "__scriptTabs": "end"
+                  },
+                  "children": {
+                    "script": [
+                      {
+                        "command": "EVENT_ACTOR_EMOTE",
+                        "args": {
+                          "actorId": "$self$",
+                          "emoteId": "603fd18d-674c-4360-9f57-5fb4b935b442"
+                        },
+                        "id": "44fee063-3b8c-446c-9eef-fbf4dfc67889"
+                      }
+                    ]
+                  },
+                  "id": "a6db3903-75de-4ca4-8789-3741aa8d3746"
+                }
+              ]
+            },
+            "id": "14aebd9a-febf-4301-9027-465d47208bad"
+          }
+        ],
+        "false": []
+      },
+      "id": "f48eb111-3964-43e0-8d5d-21eadfa55b84"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [
+    {
+      "command": "EVENT_ACTOR_EMOTE",
+      "args": {
+        "actorId": "$self$",
+        "emoteId": "148fba14-ff4c-45df-9e8d-28fe05e15cc6"
+      },
+      "id": "3484156f-3a48-43c8-b902-13cd9e64a367"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 23,
+  "y": 13,
+  "_index": 0
+}

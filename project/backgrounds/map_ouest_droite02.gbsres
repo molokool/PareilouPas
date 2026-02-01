@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "3fac1499-bf22-4e24-9e67-c5acb3f40287",
+  "name": "map_ouest_droite02",
+  "symbol": "bg_map_ouest_droite02",
+  "width": 33,
+  "height": 44,
+  "imageWidth": 264,
+  "imageHeight": 352,
+  "filename": "map_ouest_droite02.png",
+  "tileColors": "",
+  "autoColor": false
+}

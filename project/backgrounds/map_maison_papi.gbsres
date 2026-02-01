@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "e547c3f3-fc6d-4c6a-9ccf-ca8b4bf12fd0",
+  "name": "map maison papi",
+  "symbol": "bg_map_maison_papi",
+  "width": 50,
+  "height": 30,
+  "imageWidth": 400,
+  "imageHeight": 240,
+  "filename": "map maison papi.png",
+  "tileColors": "",
+  "autoColor": false
+}
