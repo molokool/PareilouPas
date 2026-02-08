@@ -27,11 +27,11 @@
     {
       "command": "EVENT_SOUND_PLAY_EFFECT",
       "args": {
-        "type": "8b05d6f6-74b8-49e9-a33f-b3eaee81cf3a",
+        "type": "beep",
         "priority": "medium",
-        "pitch": 4,
-        "frequency": 200,
-        "duration": 0.5,
+        "pitch": 8,
+        "frequency": 440,
+        "duration": 1,
         "wait": true,
         "effect": 2
       },

@@ -101,7 +101,7 @@
       "command": "EVENT_IF",
       "args": {
         "condition": {
-          "type": "eq",
+          "type": "gte",
           "valueA": {
             "type": "variable",
             "value": "21"
